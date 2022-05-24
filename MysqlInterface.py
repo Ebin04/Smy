@@ -1,7 +1,7 @@
 import mysqlx
 import streamlit_authenticator as stauth
 import streamlit as st
-
+from zoneinfo import ZoneInfo
 import mysql.connector as connection
 
 import pandas as pd
@@ -11,7 +11,7 @@ mydb = connection.connect(host="b0ur1s7ulhj7ljknkywb-mysql.services.clever-cloud
 cur= mydb.cursor(buffered=True)
 from datetime import datetime
 
-timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+timestamp = datetime.now(tz=ZoneInfo('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S')
 
 def addData(a,b,c,d):
     
