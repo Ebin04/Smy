@@ -1,0 +1,7 @@
+mysql_connector_python==8.0.29
+mysql_connector_repackaged==0.3.1
+mysqlx==1.1.4
+pandas==1.4.2
+Pillow==9.1.1
+streamlit==1.9.0
+streamlit_authenticator==0.1.4
