@@ -11,7 +11,7 @@ mydb = connection.connect(host="b0ur1s7ulhj7ljknkywb-mysql.services.clever-cloud
 cur= mydb.cursor(buffered=True)
 from datetime import datetime
 
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
 
 def addData(a,b,c,d):
     
