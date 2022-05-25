@@ -3,7 +3,7 @@ import streamlit_authenticator as stauth
 import streamlit as st
 from zoneinfo import ZoneInfo
 import mysql.connector as connection
-
+# Connecting
 import pandas as pd
 
 mydb = connection.connect(host="b0ur1s7ulhj7ljknkywb-mysql.services.clever-cloud.com",database = 'b0ur1s7ulhj7ljknkywb',user="uo2ulzbw2h9qe2pk", passwd="cNrXDJe6Mh71Sx4kqx1o")
